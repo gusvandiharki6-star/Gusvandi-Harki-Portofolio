@@ -1293,11 +1293,10 @@
             const pesan = form.querySelector('textarea').value;
 
             // 2. Format pesan WhatsApp dengan rapi
-            const waText = `Halo Gusvandi Harki, ada pesan baru dari Portofolio Website:%0A%0A` +
-                           `*Nama Lengkap:* ${encodeURIComponent(nama)}%0A` +
-                           `*Email / Kontak:* ${encodeURIComponent(kontak)}%0A` +
-                           `*Topik Kerja Sama:* ${encodeURIComponent(topik)}%0A` +
-                           `*Pesan:*%0A${encodeURIComponent(pesan)}`;
+            const waText = `Halo Gusvandi Harki, Saya :%0A%0A` +  `${encodeURIComponent(nama)}%0A` +
+            
+                           `Ingin mengajak Kerja Sama:* ${encodeURIComponent(topik)}%0A` +
+                           `*%0A${encodeURIComponent(pesan)}`;
 
             // 3. Buat URL WhatsApp ke nomor kamu (+62 822-8467-3727)
             const waUrl = `https://wa.me/6282284673727?text=${waText}`;
