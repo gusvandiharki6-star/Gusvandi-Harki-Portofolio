@@ -1293,9 +1293,9 @@
             const pesan = form.querySelector('textarea').value;
 
             // 2. Format pesan WhatsApp dengan rapi
-            const waText = `Halo Gusvandi Harki, Saya :%0A%0A` +  `${encodeURIComponent(nama)}%0A` +
+            const waText = `Halo Gusvandi Harki%0A%0A` +
             
-                           `Ingin mengajak Kerja Sama:* ${encodeURIComponent(topik)}%0A` +
+                           `Saya ${encodeURIComponent(nama)}%0A` +`Ingin mengajak Kerja Sama:* ${encodeURIComponent(topik)}%0A` +
                            `*%0A${encodeURIComponent(pesan)}`;
 
             // 3. Buat URL WhatsApp ke nomor kamu (+62 822-8467-3727)
